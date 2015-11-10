@@ -96,3 +96,7 @@ feature分支:
               查看commit id: git log --pretty=oneline --abbrev-commit
               对历史commit进行Tag: git tag v0.9 <commit_id>
           查看标签信息: git show <tagname:>
+          带说明的标签:
+             git tag -a <tagname:v0.1> -m “version 0.1 released" <commit_id>
+          通过-s用私钥签名一个标签 
+             git tag -s <tagname:v0.1> -m “version 0.1 released" <commit_id>
